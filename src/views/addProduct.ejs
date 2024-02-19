@@ -1,0 +1,41 @@
+<header><%-include('header');%></header>
+<div class="container">
+    <div class="py-5">
+        <h2>Add product</h2>
+      </div>
+  <div class="row">
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" method="POST" action="/product/addProduct" novalidate>
+          <div class="col-md-12 order-md-1">
+                <div class="col-md-6 mb-3">
+                    <label for="productName">Product Name</label>
+                    <input type="text" name="productName" class="form-control" id="productName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid product name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="description">Description</label>
+                    <input type="text" name="description" class="form-control" id="description" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid description is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="price">Price</label>
+                    <input type="text" name="price" class="form-control" id="price" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                    Valid price is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <button class="btn btn-primary btn-lg btn-block" type="submit">Submit</button>
+                </div>
+          </div>
+      </form>
+    </div>
+  </div>
+</div>
+  <footer><%-include('footer');%></footer>
+
+  
